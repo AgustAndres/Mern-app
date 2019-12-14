@@ -1,0 +1,92 @@
+body{
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.my-container{
+  width: 300px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 3pt 3pt black;
+}
+
+img.logo{
+  width: 250px; 
+  height: 100px;
+}
+.arrow{
+  width: 100px; 
+  height: 100px;
+}
+.home{
+  width: 25px; 
+  height: 25px;
+  
+}
+/*              City*/
+.cityImg{
+  width: 250px; 
+  height: 100px;
+}
+
+/*                      Itinerary                           */
+
+.imagenItinerary {
+  width: 250px; 
+  height: 100px;
+}
+
+/**                Create account                            **/
+ .archivo{
+   visibility: hidden;
+ }
+ .addPhoto{
+   color:blue;
+   text-decoration: underline
+ }
+ .addPhoto:hover{
+   cursor: pointer;
+ }
+ .formAccount{
+  text-align: center;
+ }
+ .formAccount input{
+  width:100%;
+ }
+ .formAccount label {
+    margin-bottom: 0;
+ }
+ .Country {
+  margin-left: 5px;
+}
+.divAddPhoto{
+  height: 30px;
+}
+
+ .inline-block{
+  display: block;
+ }
+.inline-block div{
+  display: block !important;
+  margin-top: 5px;
+}
+.divCountry{
+  margin-top: 15px !important;
+}
+.Agree{
+  width: 20px !important;
+  margin-top: 20px;
+}
+.submitButton{
+  width: 40%;
+}
+/*************        login *************************/
+.logoSesion{
+  cursor: pointer;
+}
