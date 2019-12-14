@@ -1,9 +1,8 @@
 import React from 'react'
-import home from '../homeIcon.png'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {SetItemsFetch}  from '../actions/itemAction';
+import Avatar from './Avatar';
 
 class CitiesPages extends React.Component {
   constructor(props) {
@@ -34,6 +33,7 @@ class CitiesPages extends React.Component {
    
     return (
       <div className="mb-2">
+        <Avatar></Avatar>
         <div className="row">
           <div className="column mx-auto mt-4">
             {<input type="text" onChange={this.filterCities} placeholder="Search"/>}

@@ -1,12 +1,11 @@
 import React from 'react'
-import home from '../homeIcon.png'
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import CreateAcc from './CreateAcc'
-import Footer from '../components/Footer'
+import Avatar from './Avatar';
 
 const CreateAccount = () =>{
   return (
       <div>
+        <Avatar></Avatar>
         <CreateAcc></CreateAcc>
       </div>
   )

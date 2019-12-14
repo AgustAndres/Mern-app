@@ -40,6 +40,7 @@ class Form extends React.Component {
 
   componentDidMount() {
     if (localStorage.token) {
+      console.log(localStorage.token);
     localStorage.clear();
       setTimeout(()=>{
           this.setState({

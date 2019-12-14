@@ -1,9 +1,7 @@
 import React from 'react'
-import home from '../homeIcon.png'
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { SetItemsFetchIt } from '../actions/itineraryActions';
+import Avatar from './Avatar';
 
 class Itinerary extends React.Component {
     componentDidMount() {
@@ -13,6 +11,7 @@ class Itinerary extends React.Component {
     render() {
         return (
             <div>
+                <Avatar></Avatar>
                 <p>Entrada exitosa itinerario de {this.props.match.params.name}</p>
 
                 {

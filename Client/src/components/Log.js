@@ -55,9 +55,12 @@ class Log extends React.Component {
                 .then(res => {
                     console.log(res);
                     if (res.data.token) {
+                        console.log("F");
                         console.log(res.data.token);
                         localStorage.setItem('token', res.data.token);
                         var decodedToken = jwtDecode(localStorage.token);
+                        console.log(decodedToken);
+                        
                         this.props.storeToken(decodedToken);
                         // localStorage.clear();
                         if (localStorage.token.length) {
@@ -65,17 +68,18 @@ class Log extends React.Component {
                                 this.setState({ redirect: true });
                               }, 1000);
                         }
-                    } else {
+                    } /*else {
+                        alert("Ultra F")
                         console.log(res);
                         localStorage.clear();
-                    }
-                    this.setState(initialState)
+                    }*/
+                    //this.setState(initialState)
                 });
             /*.catch(error => {
                  console.log(error);
                  alert(error)
              })*/
-        }
+        }event.preventDefault();
     }
 
     renderRedirect = () => {
