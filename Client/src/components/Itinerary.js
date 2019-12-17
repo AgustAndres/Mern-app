@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { SetItemsFetchIt } from '../actions/itineraryActions';
 import Avatar from './Avatar';
-
+import Favorit from './Favorit';
 class Itinerary extends React.Component {
     componentDidMount() {
         this.props.SetItemsFetchIt(this.props.match.params.name);
@@ -27,6 +27,7 @@ class Itinerary extends React.Component {
                     <p>Price: {itinerario.price}</p>
                     <p>Rating: {itinerario.rating}</p>
                     
+                    <Favorit></Favorit>
 
                     <a href="#">view all</a>
                 </div>

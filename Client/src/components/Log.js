@@ -60,26 +60,25 @@ class Log extends React.Component {
                         localStorage.setItem('token', res.data.token);
                         var decodedToken = jwtDecode(localStorage.token);
                         console.log(decodedToken);
-                        
                         this.props.storeToken(decodedToken);
-                        // localStorage.clear();
                         if (localStorage.token.length) {
                             setTimeout(() => {
                                 this.setState({ redirect: true });
                               }, 1000);
                         }
-                    } /*else {
+                    } else {
+                        this.setState({ passwordError:"Contraseña incorrecta" });
                         alert("Ultra F")
-                        console.log(res);
-                        localStorage.clear();
-                    }*/
+                        /*console.log(res);
+                        localStorage.clear();*/
+                    }
                     //this.setState(initialState)
                 });
             /*.catch(error => {
                  console.log(error);
                  alert(error)
              })*/
-        }event.preventDefault();
+        }//event.preventDefault();
     }
 
     renderRedirect = () => {
